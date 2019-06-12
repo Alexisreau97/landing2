@@ -1,0 +1,144 @@
+.brand-logo {
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.brand-logo:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.brand-logo-img {
+	height: 50px;
+	width: 50px;
+}
+
+.brand-logo-name {
+	margin: .1rem 0 0 1rem;
+}
+
+/********************************/
+
+.navigation-checkbox {
+	display: none;
+}
+
+.navigation-button {
+	position: absolute;
+	top: 30px;
+	right: 100px;
+	height: 60px;
+	width: 60px;
+	z-index: 2000;
+}
+
+.navigation-button:hover {
+	cursor: pointer;
+}
+
+.navigation-button-img {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+	transform: scale(60);
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navigation-background {
+	position: fixed;
+	top: 30px;
+	right: 100px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: radial-gradient(#2c3545, #3d3141);
+	z-index: 1000;
+
+	transform: scale(0);
+	transition: all 1s;
+}
+
+.navigation-nav {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1500;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s;
+}
+
+.navigation-list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style: none;
+	text-align: center;
+}
+
+.navigation-item {
+	margin: 10px;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .4s;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+	transform: translateX(10px);
+}
+
+
+@media (max-width: 56.25em) {
+	.brand-logo {
+		position: absolute;
+		top: 20px;
+		left: 60px;
+	}
+	.navigation-button {
+		position: absolute;
+		top: 20px;
+		right: 60px;
+	}
+}
+
+@media (max-width: 37.5em) {
+	.brand-logo {
+		position: absolute;
+		top: 10px;
+		left: 30px;
+	}
+	.navigation-button {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+}

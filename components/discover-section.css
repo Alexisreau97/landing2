@@ -1,0 +1,57 @@
+.discover-text {
+	margin-top: 60px;
+}
+
+.card {
+	margin: 45px 0 45px 0;
+	background-color: rgba(32, 32, 39, 0.6);
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+	height: 130px;
+}
+
+.card-img {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 40px;
+	width: 40px;
+}
+
+.card-title {
+	color: #fff;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.cover {
+	height: 450px;
+	background: url(../img/cover.png) no-repeat;
+	background-size: contain;
+}
+
+.discover-section .circle1 {
+	position: absolute;
+	width: 485px;
+	height: 485px;
+	left: -90px;
+	bottom: -90px;
+
+	background: rgba(23, 98, 167, 0.1);
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.discover-section .circle2 {
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	right: 75px;
+	top: 30px;
+
+	background: rgba(188, 58, 128, 0.1);
+	border-radius: 50%;
+	z-index: -1;
+}
